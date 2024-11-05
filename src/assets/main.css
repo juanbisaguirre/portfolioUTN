@@ -1,0 +1,37 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+  background-color: var(--color-background); /* Fondo blanco */
+  color: var(--color-text); /* Texto en negro */
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-accent); /* Enlaces en verde */
+}
+
+nav {
+  background-color: var(--color-background); /* Fondo blanco */
+  color: var(--color-text); /* Texto en negro */
+}
+
+@media (max-width: 768px) {
+  #app {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+  }
+}
+
+@media (min-width: 1024px) {
+  #app {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+}
+
